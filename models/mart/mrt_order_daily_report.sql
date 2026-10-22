@@ -1,4 +1,4 @@
-SELECT DATE_TRUNC(order_created_at, DAY) AS report_date,
+SELECT DATE_TRUNC(order_created_at, DAY) AS report_datee,
     mapping.account_manager,
     mapping.state,
     COUNT(DISTINCT order_id) AS total_orders,
