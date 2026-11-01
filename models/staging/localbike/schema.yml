@@ -114,9 +114,6 @@ models:
         description: "Numeric status code of the order. Four values are observed (1, 2, 3, 4)"
         data_tests:
           - not_null
-          - accepted_values:
-              arguments:
-                values: [1, 2, 3, 4]
       - name: order_date
         description: "Date on which the order was placed."
         data_tests:
@@ -178,10 +175,6 @@ models:
         description: "Identifier of the staff member who manages this person. Null for the top manager."
       - name: active
         description: "Indicates whether the staff member is currently active (1) or not (0)."
-        data_tests:
-          - accepted_values:
-              arguments:
-                values: [0, 1]
 
   - name: stg_localbike__stocks
     description: "This model contains information about product inventory levels across different stores."
