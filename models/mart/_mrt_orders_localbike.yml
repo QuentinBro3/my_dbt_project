@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: mrt_orders_localbike
+    description: '{{ doc("mrt_orders_localbike") }}'
